@@ -17,9 +17,6 @@ body {
     position: fixed;
 }
 
-.top, .bottom {
-    border: 2px solid red;
-}
 
 .top {
     display: flex;
@@ -59,14 +56,26 @@ body {
     border-radius: 0px 25px 25px 0px; 
 }
 
+.bottom {
+    background-color: lightgray;
+}
+
 .display {
     position: absolute;
-    border: 2px solid blue;
-    width: 80%;
+    border-radius: 25px;
+    width: 920px;
     height: 20%;
     top: 200px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.display div {
+    width: 185px;
 }
