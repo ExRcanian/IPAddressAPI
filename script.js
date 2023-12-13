@@ -8,4 +8,4 @@ async function getLocation() {
 }
 
 getLocation();
-sdfgsdfg sdfg 
+sdfg 
