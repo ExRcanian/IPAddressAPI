@@ -49,15 +49,20 @@ body {
     border: none;
 }
 
-.search button {
+.IPSearch {
     border: none;
     background-color: black;
     width: 40px;
     border-radius: 0px 25px 25px 0px; 
 }
 
-.bottom {
+.IPSearch:hover {
+    background-color: white;
+}
+
+#map{
     background-color: lightgray;
+    height: 560px;
 }
 
 .display {
@@ -78,4 +83,15 @@ body {
 
 .display div {
     width: 185px;
+    color: hsl(0, 0%, 59%);
+}
+
+.display div p {
+    font-weight: bold;
+    color: hsl(0, 0%, 17%);
+    font-size: 18px;
+}
+
+.searchInput {
+    padding-left: 10px;
 }
