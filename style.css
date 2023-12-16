@@ -53,11 +53,14 @@ body {
     border: none;
     background-color: black;
     width: 40px;
-    border-radius: 0px 25px 25px 0px; 
+    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .IPSearch:hover {
-    background-color: white;
+    background-color: gray;
 }
 
 #map{

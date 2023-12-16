@@ -10,7 +10,12 @@ async function getLocation(ip) {
     let lng = locationData.location.lng
     
     var map = L.map('map').setView([lat, lng], 13);
-    var marker = L.marker([lat, lng]).addTo(map);
+    var locationIcon = L.icon({
+        iconUrl: './images/icon-location.svg',
+        iconSize:     [40, 50], // size of the icon
+        iconAnchor:   [10, 50], // point of the icon which will correspond to marker's location
+    });
+    L.marker([lat, lng], {icon: locationIcon}).addTo(map);
     
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
